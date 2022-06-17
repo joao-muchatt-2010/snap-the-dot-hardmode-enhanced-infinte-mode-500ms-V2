@@ -20,11 +20,9 @@ let velocidade = 500
 game.setLife(4)
 sprite = game.createSprite(2, 2)
 basic.forever(function () {
-    if (on == 1) {
-        sprite.move(1)
-        sprite.ifOnEdgeBounce()
-        basic.pause(velocidade)
-    }
+    sprite.move(1)
+    sprite.ifOnEdgeBounce()
+    basic.pause(velocidade)
 })
 basic.forever(function () {
     if (pausa == 0) {
