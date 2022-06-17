@@ -27,7 +27,7 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (pausa == 1) {
+    if (pausa == 0) {
         game.pause()
         basic.clearScreen()
     } else {
